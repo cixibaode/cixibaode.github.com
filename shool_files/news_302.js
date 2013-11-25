@@ -1,0 +1,6 @@
+document.write("<table border=0 cellpadding=0 cellspacing=0 width='95%'height='40'>");
+document.write("<tr ><td width='5%' height='20' align='left'><img  border=0 src='../manager/icon/dot1.gif'></td><td width='95%'  height='20' align='left'><a href=http://www.deyu.sh.cn/manager/news/data/xrxw/20131125_934566_302.htm target=_blank title='纽约时报专栏作家在这所小学找到了上海PISA成绩第一的秘密'>纽约时报专栏作家在这所小学找...</a></td></tr>");
+document.write("<tr ><td width='5%' height='20' align='left'><img  border=0 src='../manager/icon/dot1.gif'></td><td width='95%'  height='20' align='left'><a href=http://www.deyu.sh.cn/manager/news/data/xrxw/20131122_695171_302.htm target=_blank title='嘉定区举行中小幼学生生活指导课程推介会(图)'>嘉定区举行中小幼学生生活指导...</a></td></tr>");
+document.write("<tr ><td width='5%' height='20' align='left'><img  border=0 src='../manager/icon/dot1.gif'></td><td width='95%'  height='20' align='left'><a href=http://www.deyu.sh.cn/manager/news/data/xrxw/20131120_575054_302.htm target=_blank title='上海市民办随迁子女学校牵手结对展示交流活动在嘉定区举行(图)'>上海市民办随迁子女学校牵手结...</a></td></tr>");
+document.write("<tr><td width='5%' align='left'></td><td width='95%' align='right'><a href='/manager/news/more/more_1.asp?disp_id=302' target='_blank'>更多>></a></td></tr>");
+document.write("</table>");

@@ -1,0 +1,6 @@
+document.write("<table border=0 cellpadding=0 cellspacing=0 width='95%'height='40'>");
+document.write("<tr ><td width='5%' height='20' align='left'><img  border=0 src='../manager/icon/dot1.gif'></td><td width='95%'  height='20' align='left'><a href=http://www.deyu.sh.cn/manager/news/data/xrxw/20131125_596188_162.htm target=_blank title='2013第五届“封浜杯”上海市教师书画展闭幕式在嘉定区举行(图)'>2013第五届“封浜杯”上海...</a></td></tr>");
+document.write("<tr ><td width='5%' height='20' align='left'><img  border=0 src='../manager/icon/dot1.gif'></td><td width='95%'  height='20' align='left'><a href=http://www.deyu.sh.cn/manager/news/data/xrxw/20131125_257061_162.htm target=_blank title='梦想乐园    快乐成长(图)'>梦想乐园    快乐成长(图...</a></td></tr>");
+document.write("<tr ><td width='5%' height='20' align='left'><img  border=0 src='../manager/icon/dot1.gif'></td><td width='95%'  height='20' align='left'><a href=http://www.deyu.sh.cn/manager/news/data/xrxw/20131125_655849_162.htm target=_blank title='合作办学结硕果'>合作办学结硕果</a></td></tr>");
+document.write("<tr><td width='5%' align='left'></td><td width='95%' align='right'><a href='/manager/news/more/more_1.asp?disp_id=162' target='_blank'>更多>></a></td></tr>");
+document.write("</table>");
