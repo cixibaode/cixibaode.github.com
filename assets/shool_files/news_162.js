@@ -1,0 +1,6 @@
+document.write("<table border=0 cellpadding=0 cellspacing=0 width='95%'height='40'>");
+document.write("<tr ><td width='5%' height='20' align='left'><img  border=0 src='../manager/icon/dot1.gif'></td><td width='95%'  height='20' align='left'><a href=http://www.deyu.sh.cn/manager/news/data/xrxw/20131125_596188_162.htm target=_blank title='2013µÚÎå½ì¡°·âäº±­¡±ÉÏº£ÊÐ½ÌÊ¦Êé»­Õ¹±ÕÄ»Ê½ÔÚ¼Î¶¨Çø¾ÙÐÐ(Í¼)'>2013µÚÎå½ì¡°·âäº±­¡±ÉÏº£...</a></td></tr>");
+document.write("<tr ><td width='5%' height='20' align='left'><img  border=0 src='../manager/icon/dot1.gif'></td><td width='95%'  height='20' align='left'><a href=http://www.deyu.sh.cn/manager/news/data/xrxw/20131125_257061_162.htm target=_blank title='ÃÎÏëÀÖÔ°    ¿ìÀÖ³É³¤(Í¼)'>ÃÎÏëÀÖÔ°    ¿ìÀÖ³É³¤(Í¼...</a></td></tr>");
+document.write("<tr ><td width='5%' height='20' align='left'><img  border=0 src='../manager/icon/dot1.gif'></td><td width='95%'  height='20' align='left'><a href=http://www.deyu.sh.cn/manager/news/data/xrxw/20131125_655849_162.htm target=_blank title='ºÏ×÷°ìÑ§½áË¶¹û'>ºÏ×÷°ìÑ§½áË¶¹û</a></td></tr>");
+document.write("<tr><td width='5%' align='left'></td><td width='95%' align='right'><a href='/manager/news/more/more_1.asp?disp_id=162' target='_blank'>¸ü¶à>></a></td></tr>");
+document.write("</table>");
