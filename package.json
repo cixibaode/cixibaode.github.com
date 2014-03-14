@@ -9,7 +9,8 @@
     "test": "make test"
   },
   "dependencies": {
-    "connect": "2.7.0"
+    "connect": "2.7.0",
+    "yamljs": "*"
   },
   "devDependencies": {},
   "engines": { "node": "0.8.x" }
