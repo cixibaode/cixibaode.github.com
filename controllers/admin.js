@@ -68,3 +68,34 @@ exports.login = function (req, res, next) {
   res.writeHead(200, {'Content-Type': 'text/html'});
   res.end(loginContent);
 };
+
+exports.onlyAdmin = function (req, res, next) {
+  var user = req.session.user;
+  //没有登录信息
+  if(!user || user.id !== 'admin') {
+    res.statusCode = 302;
+    res.setHeader('Location', '/assets/403.html');
+  }
+  return next();
+}
+
+var manageFile = path.join(__dirname, '../view/manage.html');
+var manageContent = fs.readFileSync(manageFile).toString();
+
+exports.manage = function (req, res, next) {
+  var body = req.body;
+  //新建用户
+  if (body.id && body.name && body.password) {
+    admin.add(body.id, {name: body.name, password: body.password}, function (err){
+      if (err) {
+        return next(err);
+      }
+      res.statusCode = 302;
+      res.setHeader('Location', '/content');
+      res.end();
+    });
+    return;
+  }
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  return res.end(manageContent);
+};

@@ -20,8 +20,10 @@ app.use(connect.cookieSession({ secret: 'cixibade github com', cookie: { maxAge:
 
 app.use('/login', admin.login);
 app.use('/admin/', admin.middleware);
-app.use('/admin/create', admin.create)
-app.use('/admin/upload', admin.upload)
+app.use('/admin/create', admin.create);
+app.use('/admin/upload', admin.upload);
+app.use('/admin/manage', admin.onlyAdmin);
+app.use('/admin/manage', admin.manage);
 
 app.use('/content/', index.middleware);
 app.use('/assets', connect.static( __dirname + '/assets'));
