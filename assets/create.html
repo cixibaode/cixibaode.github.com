@@ -89,7 +89,7 @@
           <label class='bold' for='title'>标题</label>
           <textarea class='span9' id='title' name='title' rows='1' placeholder="请在此输入标题，字数控制在10到100个之间"></textarea>
           <label class='bold' for='t_content'>内容</label>
-          <textarea class='editor' id='wmd-input' name='t_content' rows='20'></textarea>
+          <textarea class='editor' id='detail' name='t_content' rows='20'></textarea>
 
           <input type='hidden' id='topic_tags' name='topic_tags' value=''></input>
           <button id='submit_btn' type="submit" class='btn'>发布</button>
@@ -106,11 +106,42 @@
 
 <script>
 $(function () {
-
+  $('.tag_selectable').click(function(){
+    $(this).toggleClass('tag_select');
+  });
 
   $('#submit_btn').click(function(){
+    var sub =$("#sub").val(); 
+    var title =$("#title").val(); 
+    var detail =$("#detail").val(); 
+    if (!sub || !title || !detail) {
+      alert("请选择板块,标题和内容");
+      return false;
+    }
+    if (confirm("确定发布嘛？")) {
+      $.ajax({
+        url: '/admin/upload',
+        type: 'POST',
+        dataType: 'JSON',
+        cache: false,
+        data: {
+          sub: sub,
+          title: title, 
+          detail: detail
+        },
+        success: function (resp) {
+          alert("发布成功");
+          setTimeout(function () {
+            location.href = "/assets/index.html"
+          }, 25);
+        },
+        error: function () {
+          return alert("出错了");
+        }
+      });
+    }
     return false;
-    // $('#create_topic_form').submit();
+
   });
 });
 </script>

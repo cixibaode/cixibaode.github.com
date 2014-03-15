@@ -31,3 +31,5 @@ exports.add = function (user, info, cb) {
     
   }
 };
+
+exports.users = users;

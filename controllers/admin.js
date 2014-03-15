@@ -1,4 +1,5 @@
 var admin = require('../proxy/admin');
+var content = require('../proxy/content');
 var path = require('path');
 var fs = require('fs');
 
@@ -17,15 +18,16 @@ var createFile = path.join(__dirname, '../assets/create.html');
 var createContent = fs.readFileSync(createFile);
 
 exports.create = function (req, res, next) {
-  console.log(req.session.user);
   res.writeHead(200, {'Content-Type': 'text/html'});
   res.end(createContent);
 };
 
 
 exports.upload = function (req, res, next) {
-  console.log(req.body);
-  console.log();
+  var user = req.session.user;
+
+  res.statusCode = 200;
+  res.end(JSON.stringify({code: 1}))
 };
 
 var loginFile = path.join(__dirname, '../assets/login.html');
