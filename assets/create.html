@@ -130,9 +130,10 @@ $(function () {
           detail: detail
         },
         success: function (resp) {
+          var url = resp.href || '/assets/index.html';
           alert("发布成功");
           setTimeout(function () {
-            location.href = "/assets/index.html"
+            location.href = url;
           }, 25);
         },
         error: function () {

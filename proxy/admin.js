@@ -6,12 +6,18 @@ var path = require('path');
 var folder = config.folder;
 var users = Yaml({file: config.user});
 
+
 var values = users.keys();
 for (f in values) {
 	var p = path.join(folder, f);
 	if (!fs.existsSync(p)) {
 	  fs.mkdirSync(p);
 	}
+  infoFile = path.join(p, 'info.yaml');
+  values[f].detail = {
+    info: Yaml({ file: infoFile }),
+    dir: p
+  }
 }
 
 
@@ -33,3 +39,4 @@ exports.add = function (user, info, cb) {
 };
 
 exports.users = users;
+exports.contents = values;

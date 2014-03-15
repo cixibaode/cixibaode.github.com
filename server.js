@@ -3,6 +3,7 @@ var connect = require('connect');
 var fs = require('fs');
 var path = require('path');
 var admin = require('./controllers/admin');
+var index = require('./controllers/index');
 
 var file = path.join(__dirname, './index.html');
 var content = fs.readFileSync(file);
@@ -22,6 +23,7 @@ app.use('/admin/', admin.middleware);
 app.use('/admin/create', admin.create)
 app.use('/admin/upload', admin.upload)
 
+app.use('/content/', index.middleware);
 app.use('/assets', connect.static( __dirname + '/assets'));
 app.use('/public', connect.static( __dirname + '/public'));
 

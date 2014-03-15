@@ -9,7 +9,7 @@ exports.middleware = function (req, res, next) {
   if(!user || Object.keys(user).length === 0 || !user.id ) {
     res.statusCode = 302;
     res.setHeader('Location', '/login');
-    res.end();
+    return res.end();
   }
   return next();
 };
@@ -25,9 +25,19 @@ exports.create = function (req, res, next) {
 
 exports.upload = function (req, res, next) {
   var user = req.session.user;
-
-  res.statusCode = 200;
-  res.end(JSON.stringify({code: 1}))
+  var body = req.body;
+  var sub = body.sub;
+  if (body.sub === 'report') {
+    sub = '教师报告';
+  }
+  var options = {user: user.id, title: body.title, detail: body.detail, type: sub}
+  content.add(options, function (err, url) {
+    if (err) {
+      return next(err);
+    };
+    res.statusCode = 200;
+    res.end(JSON.stringify({code: 1, href: url}))
+  });
 };
 
 var loginFile = path.join(__dirname, '../assets/login.html');
