@@ -11,6 +11,7 @@ var content = fs.readFileSync(file);
 var loginFile = path.join(__dirname, './assets/login.html');
 var loginContent = fs.readFileSync(loginFile);
 
+
 var app = connect();
 app.use(connect.bodyParser());
 //cookie
