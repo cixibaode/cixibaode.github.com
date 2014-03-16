@@ -47,6 +47,7 @@ exports.add = function (user, infos, cb) {
     return cb(new Error('Invalid Params: ' + JSON.stringify({user: user, info: infos}) ));
   }
   users.set(user, infos);
+  values[user] = infos;
   initUser(user);
   cb();
 };
