@@ -2,13 +2,14 @@ var admin = require('../proxy/admin');
 var content = require('../proxy/content');
 var path = require('path');
 var fs = require('fs');
+var urlLib = require('url');
 
 exports.middleware = function (req, res, next) {
   var user = req.session.user;
   //没有登录信息
   if(!user || Object.keys(user).length === 0 || !user.id ) {
     res.statusCode = 302;
-    res.setHeader('Location', '/login');
+    res.setHeader('Location', '/login?redirect=' + encodeURIComponent(req.originalUrl || req.url));
     return res.end();
   }
   return next();
@@ -45,6 +46,8 @@ var loginContent = fs.readFileSync(loginFile);
 
 exports.login = function (req, res, next) {
 	var body = req.body;
+  var params = urlLib.parse(req.url, true);
+  var redirect = params.redirect;
 	//尝试登录
 	if (body && body.name && body.pass) {
     admin.check(body.name, body.pass, function (err, flag, user) {
@@ -54,7 +57,7 @@ exports.login = function (req, res, next) {
       if (flag === true) {
         req.session.user = user;
         res.statusCode = 302;
-        res.setHeader('Location', '/admin/create');
+        res.setHeader('Location', redirect || '/');
         return res.end();
       }
       res.statusCode = 302;
