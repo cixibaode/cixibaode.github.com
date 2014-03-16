@@ -36,7 +36,7 @@ exports.upload = function (req, res, next) {
     if (err) {
       return next(err);
     };
-    res.statusCode = 200;
+    res.writeHead(200, {"Content-Type": "application/json"});
     res.end(JSON.stringify({code: 1, href: url}))
   });
 };
