@@ -40,3 +40,7 @@ var server = http.createServer(app);
 server.listen(8080, function () {
   console.log('Server running at http://127.0.0.1:80/');
 });
+
+process.on('uncaughtException', function(err) {
+  console.log(err);
+});
