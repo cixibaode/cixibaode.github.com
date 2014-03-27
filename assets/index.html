@@ -6,119 +6,53 @@
 <meta http-equiv="Content-Language" content="zh-cn"> 
 <meta name="keywords" content="慈溪市保德实验学校"> 
 <meta name="description" content="慈溪市保德实验学校"> 
-<link href="./shool_files/style.css" rel="stylesheet" type="text/css"> 
-<style type="text/css">
- #g_div{text-align:right; overflow:hidden}
-        .b{width:24px; height:16px; background:#737373; font-size:14px; font-weight:bold; color:#fff; text-decoration:none;margin-left:1px}
-        .b:hover{width:24px; height:16px; background:#780001; font-size:14px; font-weight:bold; color:#fff; text-decoration:none;margin-left:1px}
-        .bhover{width:24px; height:16px; background:#780001; font-size:14px; font-weight:bold; color:#fff; text-decoration:none;margin-left:1px}
+<link href="./css/index.css" rel="stylesheet" type="text/css">
 
-body {
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        background-color: #7BE055;
-}
-.style3 {
-        color: #000000;
-        font-weight: bold;
-}
-.center{
-        width:900px;
-        MARGIN-RIGHT: auto; 
-        MARGIN-LEFT: auto;
-}
-</style>
-<script type="text/javascript">
-/**
-* 删除左右两端的空格
-*/
-function trim(str)
-{
-     return str.replace(/(^\s*)(\s*$)/g,'');
-}
-/**
-* 删除左边的空格
-*/
-function ltrim(str)
-{
-     return str.replace(/(^\s*)/g,'');
-}
-/**
-* 删除右边的空格
-*/
-function rtrim(str)
-{
-     return str.replace(/(\s*$)/g,'');
-}
-
-
-    //debugger;
-    function Check() {
-        var searchValue = document.getElementById("ck").value;
-         if (trim(searchValue) == "" || searchValue == null) {
-            alert("请输入搜索内容！");
-            return false;
-        }
-                
-                if(trim(searchValue).indexOf(' ')>=0)
-                {
-                        alert("搜索内容中不能含有空格！");
-                        return false;
-                }
-
-        //正则表达式，填写#号部分,test结果为false表示不含有非法字符   /^[^####]*$/.test()
-        if (!(/^[^'?`;"_~<>!@#$%^&*()+-]*$/.test(searchValue))) {
-            alert("搜索内容中含有非法字符！");
-            return false;
-        }
-        return true;
-    }
-</script></head>
+<script type="text/javascript" src="./js/index.js"></script>
+</head>
 <body screen_capture_injected="true" ryt11981="1">
 <center>
 <!--头+flash-->
 <div class="center" style="height:137px">
-    <div style="float:left"><img alt="" src="./shool_files/index_r1_c1_r1_c1_r1_c1.jpg" width="75px" height="137px" border="0"></div>
+    <div style="float:left"><img alt="" src="http://baode.qiniudn.com/home/index_r1_c1_r1_c1_r1_c1.jpg" width="75px" height="137px" border="0"></div>
     <div style="float:left">
-    <img src="./img/banner2.jpg" width="770" height="137">           
+    <img src="http://baode.qiniudn.com/img/banner2.jpg" width="770" height="137">           
     </div>
-    <div style="float:left"><img alt="" src="./shool_files/index_r1_c1_r1_c1_r1_c3.jpg" width="55px" height="137px" border="0"></div>
+    <div style="float:left"><img alt="" src="http://baode.qiniudn.com/home/index_r1_c1_r1_c1_r1_c3.jpg" width="55px" height="137px" border="0"></div>
 </div>
-<div class="center" style="height:38px"><img alt="" src="./shool_files/index_r1_c1_r2_c1.jpg" height="38px" border="0"></div>
+<div class="center" style="height:38px"><img alt="" src="http://baode.qiniudn.com/home/index_r1_c1_r2_c1.jpg" height="38px" border="0"></div>
 <!--//头+flash-->
 <!--导航-->
 <div class="center" style=" height:32px; background-color:#ffffff">
-    <div style="width:71px; height:29px; margin-left:7px; float:left"><a href="./index.html"><img name="index_r3_c2" src="./shool_files/index_r3_c2.jpg" width="71" height="29" border="0" id="Img1" alt=""></a></div>
-    <div style="width:72px; height:29px; margin-left:2px; float:left"><a href="./about.html"><img name="index_r3_c5" src="./img/tab/index_r3_c5_meitu_1.jpg" width="72" height="29" border="0" id="Img2" alt=""></a></div>
-    <div style="width:72px; height:29px; margin-left:2px; float:left"><a href="./index.html"><img name="index_r3_c8" src="./img/tab/index_r3_c8_meitu_2.jpg" width="72" height="29" border="0" id="Img3" alt=""></a></div>
-    <div style="width:72px; height:29px; margin-left:2px; float:left"><a href="./index.html"><img name="index_r3_c12" src="./img/tab/index_r3_c12_meitu_1.jpg" width="72" height="29" border="0" id="Img7" alt=""></a></div>
-    <div style="width:71px; height:29px; margin-left:2px; float:left"><a href="./index.html"><img name="index_r3_c16" src="./img/tab/index_r3_c16_meitu_1.jpg" width="71" height="29" border="0" id="Img8" alt=""></a></div>
-    <div style="width:71px; height:29px; margin-left:2px; float:left"><a href="./weixin.html"><img name="index_r3_c18" src="./img/tab/index_r3_c18_meitu_2.jpg" width="71" height="29" border="0" id="Img9" alt=""></a></div>
-    <div style="width:71px; height:29px; margin-left:2px; float:left"><a href="./index.html"><img name="index_r3_c22" src="./img/tab/index_r3_c22_meitu_3.jpg" width="71" height="29" border="0" id="Img10" alt=""></a></div>
-    <div style="width:72px; height:29px; margin-left:2px; float:left"><a href="./index.html"><img name="index_r3_c24" src="./img/tab/index_r3_c24_meitu_4.jpg" width="72" height="29" border="0" id="Img11" alt=""></a></div>
+    <div style="width:71px; height:29px; margin-left:7px; float:left"><a href="./index.html"><img name="index_r3_c2" src="http://baode.qiniudn.com/home/index_r3_c2.jpg" width="71" height="29" border="0" id="Img1" alt=""></a></div>
+    <div style="width:72px; height:29px; margin-left:2px; float:left"><a href="./about.html"><img name="index_r3_c5" src="http://baode.qiniudn.com/img/tab/index_r3_c5_meitu_1.jpg" width="72" height="29" border="0" id="Img2" alt=""></a></div>
+    <div style="width:72px; height:29px; margin-left:2px; float:left"><a href="./index.html"><img name="index_r3_c8" src="http://baode.qiniudn.com/img/tab/index_r3_c8_meitu_2.jpg" width="72" height="29" border="0" id="Img3" alt=""></a></div>
+    <div style="width:72px; height:29px; margin-left:2px; float:left"><a href="./index.html"><img name="index_r3_c12" src="http://baode.qiniudn.com/img/tab/index_r3_c12_meitu_1.jpg" width="72" height="29" border="0" id="Img7" alt=""></a></div>
+    <div style="width:71px; height:29px; margin-left:2px; float:left"><a href="./index.html"><img name="index_r3_c16" src="http://baode.qiniudn.com/img/tab/index_r3_c16_meitu_1.jpg" width="71" height="29" border="0" id="Img8" alt=""></a></div>
+    <div style="width:71px; height:29px; margin-left:2px; float:left"><a href="./weixin.html"><img name="index_r3_c18" src="http://baode.qiniudn.com/img/tab/index_r3_c18_meitu_2.jpg" width="71" height="29" border="0" id="Img9" alt=""></a></div>
+    <div style="width:71px; height:29px; margin-left:2px; float:left"><a href="./index.html"><img name="index_r3_c22" src="http://baode.qiniudn.com/img/tab/index_r3_c22_meitu_3.jpg" width="71" height="29" border="0" id="Img10" alt=""></a></div>
+    <div style="width:72px; height:29px; margin-left:2px; float:left"><a href="./index.html"><img name="index_r3_c24" src="http://baode.qiniudn.com/img/tab/index_r3_c24_meitu_4.jpg" width="72" height="29" border="0" id="Img11" alt=""></a></div>
 
-    <div style="width:71px; height:29px; margin-left:2px; float:left"><a href="/content"><img src="./img/tab/teacher.jpg" width="71" height="29" border="0" id="Img10" alt=""></a></div>
-    <div style="width:72px; height:29px; margin-left:2px; float:left"><a href="/admin/create"><img src="./img/tab/create.jpg" width="72" height="29" border="0" id="Img11" alt=""></a></div>
-    <div style="width:72px; height:29px; margin-left:2px; float:left"><a href="/admin/manage"><img src="./img/tab/admin.jpg" width="72" height="29" border="0" id="Img11" alt=""></a></div>
+    <div style="width:71px; height:29px; margin-left:2px; float:left"><a href="/content"><img src="http://baode.qiniudn.com/img/tab/teacher.jpg" width="71" height="29" border="0" id="Img10" alt=""></a></div>
+    <div style="width:72px; height:29px; margin-left:2px; float:left"><a href="/admin/create"><img src="http://baode.qiniudn.com/img/tab/create.jpg" width="72" height="29" border="0" id="Img11" alt=""></a></div>
+    <div style="width:72px; height:29px; margin-left:2px; float:left"><a href="/admin/manage"><img src="http://baode.qiniudn.com/img/tab/admin.jpg" width="72" height="29" border="0" id="Img11" alt=""></a></div>
 
 </div>
 <!--/导航-->
 <!--搜索-->
 <div class="center" style=" height:52px">
-    <div><img alt="" src="./shool_files/index_r2_c1.jpg" height="3px" border="0"></div>
-    <div><img alt="" src="./shool_files/index_r5_c2_r1_c1.jpg" height="16px" border="0"></div>
-    <div style="float:left"><img alt="" width="90px" height="22px" src="./shool_files/index_r5_c2_r2_c1.jpg" border="0"></div>
+    <div><img alt="" src="http://baode.qiniudn.com/home/index_r2_c1.jpg" height="3px" border="0"></div>
+    <div><img alt="" src="http://baode.qiniudn.com/home/index_r5_c2_r1_c1.jpg" height="16px" border="0"></div>
+    <div style="float:left"><img alt="" width="90px" height="22px" src="http://baode.qiniudn.com/home/index_r5_c2_r2_c1.jpg" border="0"></div>
     <div style="float:left; width:426px">&nbsp;</div>
-    <div style="float:left;"><img alt="" width="165px" height="22px" src="./shool_files/index_r5_c2_r2_c3.jpg" border="0"></div>
+    <div style="float:left;"><img alt="" width="165px" height="22px" src="http://baode.qiniudn.com/home/index_r5_c2_r2_c3.jpg" border="0"></div>
     <div style="float:left;">
                 <form id="form_search" method="post" action="/" onsubmit="return Check();">
         <input name="ck" type="text" id="ck" maxlength="20" style="width:154px;height:16px;border-style:none; border-width: 1px">
-        <input type="image" src="./shool_files/index_r5_c2_r2_c6.jpg" name="Submit" value="提交" style="border-width:0px;width:25px;height:16px; margin-left:10px">
+        <input type="image" src="http://baode.qiniudn.com/home/index_r5_c2_r2_c6.jpg" name="Submit" value="提交" style="border-width:0px;width:25px;height:16px; margin-left:10px">
                 </form>
     </div>
-    <div><img alt="" src="./shool_files/index_r5_c2_r4_c1.jpg" height="11px" border="0"></div>
+    <div><img alt="" src="http://baode.qiniudn.com/home/index_r5_c2_r4_c1.jpg" height="11px" border="0"></div>
 </div>
 <!--//搜索-->
 <!--主体-->
@@ -126,27 +60,33 @@ function rtrim(str)
     <div style="width:227px; height:921px; float:left">
             <div style="width:9px; height:921px; float:left;"></div>
             <div style="width:210px;height:921px; float:left; background-color:#ffffff">
-               <div><img alt="" src="./shool_files/index_r6_c3_r1_c1.jpg" height="91px" border="0"></div>
+               <div><img alt="" src="http://baode.qiniudn.com/home/index_r6_c3_r1_c1.jpg" height="91px" border="0"></div>
                <div style="height:226px;">
-                    <div style="width:175px; margin-left:15px"><marquee id="marquee3" name="marquee3" onmouseover="marquee3.stop()" onmouseout="marquee3.start()" scrolldelay="1" direction="up" scrollamount="1" style="width:100% ;height:206px"><table border="0" cellpadding="0" cellspacing="0" width="95%" height="40"><tbody><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="/weixin.html" target="_blank" title="保德实验学校推出微信平台">保德实验学校推出微信平台</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new_year_hope.html" target="_blank" title="2014新年校长寄语">2014新年校长寄语</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new1.html" target="_blank" title="保德校园传唱《谁是最美的人》">保德校园传唱《谁是最美的人》</a></td></tr>
+                    <div style="width:175px; margin-left:15px"><marquee id="marquee3" name="marquee3" onmouseover="marquee3.stop()" onmouseout="marquee3.start()" scrolldelay="1" direction="up" scrollamount="1" style="width:100% ;height:206px">
+
+                <table border="0" cellpadding="0" cellspacing="0" width="95%" height="40">
+                    <tbody>
+                        <tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="/weixin.html" target="_blank" title="保德实验学校推出微信平台">保德实验学校推出微信平台</a></td></tr>
+                        <tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new_year_hope.html" target="_blank" title="2014新年校长寄语">2014新年校长寄语</a></td>
+                        </tr><tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new1.html" target="_blank" title="保德校园传唱《谁是最美的人》">保德校园传唱《谁是最美的人》</a></td></tr>
 
 
                     </tbody></table></marquee></div>
                     <div style="width:175px; height:20px; margin-left:15px; text-align:right;"><a href="./index.html" target="_blank">更多&gt;&gt;</a></div>
                 </div>
-                <div style="margin-left:7px; "><img alt="" src="./shool_files/index_r6_c3_r5_c2.jpg" width="195px" height="12px" border="0"></div>
-                <div style="margin-left:7px;"><a href="./index.html" target="_blank"><img name="index_r6_c3_r6_c2" src="./img/shool_student_girl.jpg" width="195" height="66" border="0" id="Img16" alt=""></a></div>
-                <div style="margin-left:7px;"><a href="./weixin.html" target="_blank"><img name="index_r6_c3_r8_c2" src="./shool_files/index_r6_c3_r8_c2.jpg" width="195" height="69" border="0" id="Img17" alt=""></a></div>
-                <div style="margin-left:7px;"><a href="./index.html" target="_blank"><img name="index_r6_c3_r9_c2" src="./img/p1.jpg" width="195" height="123" border="0" id="Img18" alt=""></a></div>
+                <div style="margin-left:7px; "><img alt="" src="http://baode.qiniudn.com/home/index_r6_c3_r5_c2.jpg" width="195px" height="12px" border="0"></div>
+                <div style="margin-left:7px;"><a href="./index.html" target="_blank"><img name="index_r6_c3_r6_c2" src="http://baode.qiniudn.com/img/shool_student_girl.jpg" width="195" height="66" border="0" id="Img16" alt=""></a></div>
+                <div style="margin-left:7px;"><a href="./weixin.html" target="_blank"><img name="index_r6_c3_r8_c2" src="http://baode.qiniudn.com/home/index_r6_c3_r8_c2.jpg" width="195" height="69" border="0" id="Img17" alt=""></a></div>
+                <div style="margin-left:7px;"><a href="./index.html" target="_blank"><img name="index_r6_c3_r9_c2" src="http://baode.qiniudn.com/img/p1.jpg" width="195" height="123" border="0" id="Img18" alt=""></a></div>
                 <div style="margin-left:4px;height:83px;  width:210px;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="157">
                   <tbody><tr>
-                   <td><a href="./index.html" target="_blank"><img name="shixun_r2_c2" src="./shool_files/bzrdtr2013.jpg" width="157" height="34" border="0" id="shixun_r2_c2" alt=""></a></td>
+                   <td><a href="./index.html" target="_blank"><img name="shixun_r2_c2" src="http://baode.qiniudn.com/home/bzrdtr2013.jpg" width="157" height="34" border="0" id="shixun_r2_c2" alt=""></a></td>
                   </tr>
                   <tr>
-                   <td><img name="shixun_r3_c2" src="./shool_files/shixun_r3_c2.jpg" width="157" height="7" border="0" id="shixun_r3_c2" alt=""></td>
+                   <td><img name="shixun_r3_c2" src="http://baode.qiniudn.com/home/shixun_r3_c2.jpg" width="157" height="7" border="0" id="shixun_r3_c2" alt=""></td>
                   </tr>
                   <tr>
-                   <td><a href="./index.html" target="_blank"><img name="shixun_r4_c2" src="./shool_files/shixun_r4_c2_１.jpg" width="157" height="34" border="0" id="shixun_r4_c2" alt=""></a></td>
+                   <td><a href="./index.html" target="_blank"><img name="shixun_r4_c2" src="http://baode.qiniudn.com/home/shixun_r4_c2_１.jpg" width="157" height="34" border="0" id="shixun_r4_c2" alt=""></a></td>
                   </tr>
                 </tbody></table></div>
                 <div style="width:195px; height:58px;margin-left:7px; "></div>
@@ -155,9 +95,9 @@ function rtrim(str)
                     <a href="./index.html" target="_blank" style="color:#000000;margin-left:48px">工作探讨</a><br>
                     <a href="./index.html" target="_blank" style="color:#000000;margin-left:48px">礼仪修养</a></div>
                 <div style="width:195px; height:35px;margin-left:7px; "></div>
-                <div style="width:195px; height:75px;margin-left:7px; background-color:#E6E7E2;text-decoration:none"><table border="0" cellpadding="0" cellspacing="0" width="95%" height="40"><tbody><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="http://www.deyu.sh.cn/manager/news/data/upfile/20131009_974163_429.pdf" target="_blank" title="教师学习资料2013.04 (《思想理论教育》杂志社)">教师学习资料20...</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="http://www.deyu.sh.cn/manager/news/data/upfile/20130902_732387_429.pdf" target="_blank" title="教师学习资料2013.03 (《思想理论教育》杂志社)">教师学习资料20...</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="http://www.deyu.sh.cn/manager/news/data/upfile/20130902_267971_429.pdf" target="_blank" title="教师学习资料2013.02 (《思想理论教育》杂志社)">教师学习资料20...</a></td></tr><tr><td width="5%" align="left"></td><td width="95%" align="right"><a href="./index.html" target="_blank">更多&gt;&gt;</a></td></tr></tbody></table></div>
+                <div style="width:195px; height:75px;margin-left:7px; background-color:#E6E7E2;text-decoration:none"><table border="0" cellpadding="0" cellspacing="0" width="95%" height="40"><tbody><tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="http://www.deyu.sh.cn/manager/news/data/upfile/20131009_974163_429.pdf" target="_blank" title="教师学习资料2013.04 (《思想理论教育》杂志社)">教师学习资料20...</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="http://www.deyu.sh.cn/manager/news/data/upfile/20130902_732387_429.pdf" target="_blank" title="教师学习资料2013.03 (《思想理论教育》杂志社)">教师学习资料20...</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="http://www.deyu.sh.cn/manager/news/data/upfile/20130902_267971_429.pdf" target="_blank" title="教师学习资料2013.02 (《思想理论教育》杂志社)">教师学习资料20...</a></td></tr><tr><td width="5%" align="left"></td><td width="95%" align="right"><a href="./index.html" target="_blank">更多&gt;&gt;</a></td></tr></tbody></table></div>
 
-                <div style="margin-left:6px;"><img src="./shool_files/default_left_buttom.jpg" width="208px" height="18px" border="0"></div>
+                <div style="margin-left:6px;"><img src="http://baode.qiniudn.com/home/default_left_buttom.jpg" width="208px" height="18px" border="0"></div>
             </div>
             <div style="width:8px;height:921px; float:left;"></div>
     </div>
@@ -165,21 +105,33 @@ function rtrim(str)
             <div style=" width:663px; height:470px">
                     <div style="width:327px; height:470px; float:left;">
                          <div style=" width:327px; float:left;background-color:#ffffff; margin:0">
-                            <div><img alt="" src="./shool_files/index_r6_c10_r1_c1.jpg" height="59px" border="0"></div>
-                            <div style=" width:259px; height:99px; margin-left:30px"><table border="0" cellpadding="0" cellspacing="0" width="95%" height="40"><tbody><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./weixin.html" target="_blank">保德实验学校推出微信平台</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new_year_hope.html" target="_blank" title="2014新年校长寄语">2014新年校长寄语</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new1.html" target="_blank" title="保德校园传唱《谁是最美的人》">保德校园传唱《谁是最美的人》</a></td></tr><tr><td width="5%" align="left"></td><td width="95%" align="right"><a href="./new_year_hope.html" target="_blank">更多&gt;&gt;</a></td></tr></tbody></table></div>
-                            <div style="margin-left:30px"><img alt="" src="./shool_files/index_r6_c10_r3_c2.jpg" width="259px" height="47px" border="0"></div>
-                            <div style="width:259px; height:94px;margin-left:30px"><table border="0" cellpadding="0" cellspacing="0" width="95%" height="40"><tbody><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new2.html" target="_blank" title="副市长张定伟一行来我校进行慰问">副市长张定伟一行来我校进行慰问</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new3.html" target="_blank" title="保德实验学校加强交通安全教育">保德实验学校加强交通安全教育</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new4.html" target="_blank" title="关于做好慈善捐款宣传组织工作的通知">关于做好慈善捐款宣传组织工作的通知</a></td></tr><tr><td width="5%" align="left"></td><td width="95%" align="right"><a href="./new1.html" target="_blank">更多&gt;&gt;</a></td></tr></tbody></table></div>
-                            <div style="margin-left:30px"><img alt="" src="./shool_files/index_r6_c10_r5_c2.jpg" width="259px" height="50px" border="0"></div>
-                            <div style="width:259px; height:94px;margin-left:30px"><table border="0" cellpadding="0" cellspacing="0" width="95%" height="40"><tbody><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new5.html" target="_blank" title="快速适应新的学习环境，你准备好了吗？">快速适应新的学习环境，你准备好了吗？</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new6.html" target="_blank" title="不同养育法对孩子能力造成不同影响">不同养育法对孩子能力造成不同影响</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="http://kdzx.cixiedu.net/Article/ShowArticle.asp?ArticleID=252" target="_blank" title="关于征集本校毕业“最骄傲的校友、最可爱的军人”信息的通知">征集本校毕业“最骄傲的校友...</a></td></tr><tr><td width="5%" align="left"></td><td width="95%" align="right"><a href="./index.html" target="_blank">更多&gt;&gt;</a></td></tr></tbody></table></div>
-                            <div><img alt="" src="./shool_files/default_left_1.jpg" height="27px" border="0"></div>
+                            <div><img alt="" src="http://baode.qiniudn.com/home/index_r6_c10_r1_c1.jpg" height="59px" border="0"></div>
+                            <div style=" width:259px; height:99px; margin-left:30px">
+                                <table border="0" cellpadding="0" cellspacing="0" width="95%" height="40">
+                                    <tbody>
+                                        <tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./weixin.html" target="_blank">保德实验学校推出微信平台</a></td></tr>
+                                        <tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new_year_hope.html" target="_blank" title="2014新年校长寄语">2014新年校长寄语</a></td></tr>
+                                        <tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new1.html" target="_blank" title="保德校园传唱《谁是最美的人》">保德校园传唱《谁是最美的人》</a></td></tr>
+                                        <tr><td width="5%" align="left"></td><td width="95%" align="right"><a href="./new_year_hope.html" target="_blank">更多&gt;&gt;</a></td></tr></tbody></table></div>
+                            <div style="margin-left:30px"><img alt="" src="http://baode.qiniudn.com/home/index_r6_c10_r3_c2.jpg" width="259px" height="47px" border="0"></div>
+                            <div style="width:259px; height:94px;margin-left:30px"><table border="0" cellpadding="0" cellspacing="0" width="95%" height="40">
+
+                                <tbody>
+                                    <tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new2.html" target="_blank" title="副市长张定伟一行来我校进行慰问">副市长张定伟一行来我校进行慰问</a></td></tr>
+                                    <tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new3.html" target="_blank" title="保德实验学校加强交通安全教育">保德实验学校加强交通安全教育</a></td></tr>
+                                    <tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new4.html" target="_blank" title="关于做好慈善捐款宣传组织工作的通知">关于做好慈善捐款宣传组织工作的通知</a></td></tr>
+                                    <tr><td width="5%" align="left"></td><td width="95%" align="right"><a href="./new1.html" target="_blank">更多&gt;&gt;</a></td></tr></tbody></table></div>
+                            <div style="margin-left:30px"><img alt="" src="http://baode.qiniudn.com/home/index_r6_c10_r5_c2.jpg" width="259px" height="50px" border="0"></div>
+                            <div style="width:259px; height:94px;margin-left:30px"><table border="0" cellpadding="0" cellspacing="0" width="95%" height="40"><tbody><tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new5.html" target="_blank" title="快速适应新的学习环境，你准备好了吗？">快速适应新的学习环境，你准备好了吗？</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./new6.html" target="_blank" title="不同养育法对孩子能力造成不同影响">不同养育法对孩子能力造成不同影响</a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="http://kdzx.cixiedu.net/Article/ShowArticle.asp?ArticleID=252" target="_blank" title="关于征集本校毕业“最骄傲的校友、最可爱的军人”信息的通知">征集本校毕业“最骄傲的校友...</a></td></tr><tr><td width="5%" align="left"></td><td width="95%" align="right"><a href="./index.html" target="_blank">更多&gt;&gt;</a></td></tr></tbody></table></div>
+                            <div><img alt="" src="http://baode.qiniudn.com/home/default_left_1.jpg" height="27px" border="0"></div>
                          </div>
                     </div>
                     <div style="width:9px; height:470px; float:left; "></div>
                     <div style="width:327px; height:470px; float:left">
-                         <div style="width:327px"><img src="./shool_files/index_r6_c26_r1_c1_1.jpg" alt="" width="327px" height="51px" border="0"></div>
+                         <div style="width:327px"><img src="http://baode.qiniudn.com/home/index_r6_c26_r1_c1_1.jpg" alt="" width="327px" height="51px" border="0"></div>
                          <div style="height:233px;">
                             <div id="g_div" style="width:314px;height:227px;border:0px; margin-left:6px; b">
-                                 <a href="./index.html" target="_blank"><img id="g_img" style="filter:revealTrans(duration=1,transition=23);width:314px;height:207px;border:0px" src="./img/pic_1_blank.jpg" alt=""></a>
+                                 <a href="./index.html" target="_blank"><img id="g_img" style="filter:revealTrans(duration=1,transition=23);width:314px;height:207px;border:0px" src="http://baode.qiniudn.com/img/pic_1_blank.jpg" alt=""></a>
                                  <a href="./index.html" target="_blank"></a>
                                  <a href="http://dhuodong.sherc.net/wangerxiao/main/Default.aspx" target="_blank"></a>
                                  <a href="http://www.deyu.sh.cn/huodong/red_2013/main/default.htm" target="_blank"></a>
@@ -189,12 +141,12 @@ function rtrim(str)
       
                                                         </div>
                          </div>
-                         <div><img src="./shool_files/default_right_2.jpg" alt="" border="0"></div>
+                         <div><img src="http://baode.qiniudn.com/home/default_right_2.jpg" alt="" border="0"></div>
                          <div style="height:62px;">
-                            <div style="margin-left:6px; margin-right:6px; height:60px"><table border="0" cellpadding="0" cellspacing="0" width="95%" height="40"><tbody><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./index.html" target="_blank" title=""></a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="./shool_files/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./index.html" target="_blank" title=""></a></td></tr><tr><td width="5%" align="left"></td><td width="95%" align="right"><a href="./index.html" target="_blank">更多&gt;&gt;</a></td></tr></tbody></table></div>
+                            <div style="margin-left:6px; margin-right:6px; height:60px"><table border="0" cellpadding="0" cellspacing="0" width="95%" height="40"><tbody><tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./index.html" target="_blank" title=""></a></td></tr><tr><td width="5%" height="20" align="left"><img border="0" src="http://baode.qiniudn.com/home/dot1.gif"></td><td width="95%" height="20" align="left"><a href="./index.html" target="_blank" title=""></a></td></tr><tr><td width="5%" align="left"></td><td width="95%" align="right"><a href="./index.html" target="_blank">更多&gt;&gt;</a></td></tr></tbody></table></div>
                          </div>
-                         <div><a href="http://www.deyu.sh.cn/manager/news/more/more_1.asp?disp_id=416" target="_blank"><img src="./shool_files/default_right_4.jpg" alt="" border="0"></a></div>
-                         <div><img src="./shool_files/default_right_5.jpg" alt="" border="0"></div>
+                         <div><a href="http://www.deyu.sh.cn/manager/news/more/more_1.asp?disp_id=416" target="_blank"><img src="http://baode.qiniudn.com/home/default_right_4.jpg" alt="" border="0"></a></div>
+                         <div><img src="http://baode.qiniudn.com/home/default_right_5.jpg" alt="" border="0"></div>
                     </div> 
             </div>
             <div style="width:663px; height:184px">
@@ -208,51 +160,47 @@ function rtrim(str)
                         </object>
                     </div>
                     <div style="float:left; width:221px">
-                            <div><a href="./index.html" target="_blank"><img src="./img/p2.jpg" alt="" border="0"></a></div>
+                            <div><a href="./index.html" target="_blank"><img src="http://baode.qiniudn.com/img/p2.jpg" alt="" border="0"></a></div>
                     </div>
                     <div style=" float:left; width:221px">
-                                                <a href="./index.html" target="_blank"><img src="./img/p3.jpg" alt="" border="0"></a>
-                        <!--<div><img src="images/default_right_third_r1_c1.jpg" alt="" border="0" /></div>
-                        <div><a href="http://www.deyu.sh.cn/huodong/2009_sjjd_web/main/default.html" target="_blank"><img src="images/default_right_third_r2_c1.jpg" alt="" border="0" /></a></div>
-                        <div><a href="http://www.deyu.sh.cn/manager/news/more/more_1.asp?disp_id=410" target="_blank"><img src="images/default_right_third_r3_c1.jpg" alt="" border="0" /></a></div>
-                        <div><img src="images/default_right_third_r4_c1.jpg" alt="" border="0" /></div> -->
+                                                <a href="./index.html" target="_blank"><img src="http://baode.qiniudn.com/img/p3.jpg" alt="" border="0"></a>
                     </div>
             </div>
-            <div style="width:663px; height:9px; "><img src="./shool_files/index_r10_c10.jpg" width="663px" height="9px" alt="" border="0"></div>
+            <div style="width:663px; height:9px; "><img src="http://baode.qiniudn.com/home/index_r10_c10.jpg" width="663px" height="9px" alt="" border="0"></div>
             <div style="width:663px; height:258px">
                     <div style="width:394px; height:258px; float:left">
                          <div style="height:64px">
                             <div style="width:191px; height:64px; float:left; "></div>
                             <div style="width:203px; height:64px; float:left">
                                 <div style="height:32px; background-color:#ffffff">&nbsp;</div>
-                                <div style="width:120px; height:32px; float:left"><a href="./index.html" target="_blank"><img src="./shool_files/1a_r1_c1_r2_c2.jpg" alt="" border="0"></a></div>
-                                <div style="width:83px; height:32px; float:left"><a href="./index.html" target="_blank"><img src="./shool_files/1a_r1_c1_r2_c3.jpg" alt="" border="0"></a></div>
+                                <div style="width:120px; height:32px; float:left"><a href="./index.html" target="_blank"><img src="http://baode.qiniudn.com/home/1a_r1_c1_r2_c2.jpg" alt="" border="0"></a></div>
+                                <div style="width:83px; height:32px; float:left"><a href="./index.html" target="_blank"><img src="http://baode.qiniudn.com/home/1a_r1_c1_r2_c3.jpg" alt="" border="0"></a></div>
                             </div>
                          </div>
-                         <div><a href="./index.html" target="_blank"><img src="./shool_files/1a_r1_c1_r3_c1.jpg" alt="" border="0"></a></div>
-                         <div><a href="http://14367288.5sing.com/" target="_blank"><img src="./shool_files/1a_r1_c1_r4_c1.jpg" alt="" border="0"></a></div>
-                         <div><a href="index.html" target="_blank"><img src="./shool_files/jb2013.jpg" alt="" border="0"></a></div>
+                         <div><a href="./index.html" target="_blank"><img src="http://baode.qiniudn.com/home/1a_r1_c1_r3_c1.jpg" alt="" border="0"></a></div>
+                         <div><a href="http://14367288.5sing.com/" target="_blank"><img src="http://baode.qiniudn.com/home/1a_r1_c1_r4_c1.jpg" alt="" border="0"></a></div>
+                         <div><a href="index.html" target="_blank"><img src="http://baode.qiniudn.com/home/jb2013.jpg" alt="" border="0"></a></div>
                     </div>
                     <div style="width:269px; height:258px; float:left">
-                        <div><img src="./shool_files/1a_r1_c2.jpg" alt="" border="0"></div>
-                        <div><a href="./index.html" target="_blank"><img src="./shool_files/1a_r2_c2.jpg" alt="" border="0"></a></div>
-                        <div><a href="./index.html" target="_blank"><img src="./shool_files/1a_r3_c2.jpg" alt="" border="0"></a></div>
-                        <div><a href="" target="_blank"><img src="./shool_files/1a_r4_c2.jpg" alt="" border="0"></a></div>
-                        <div><a href="./index.html" target="_blank"><img src="./shool_files/1a_r5_c2.jpg" alt="" border="0"></a></div>
+                        <div><img src="http://baode.qiniudn.com/home/1a_r1_c2.jpg" alt="" border="0"></div>
+                        <div><a href="./index.html" target="_blank"><img src="http://baode.qiniudn.com/home/1a_r2_c2.jpg" alt="" border="0"></a></div>
+                        <div><a href="./index.html" target="_blank"><img src="http://baode.qiniudn.com/home/1a_r3_c2.jpg" alt="" border="0"></a></div>
+                        <div><a href="" target="_blank"><img src="http://baode.qiniudn.com/home/1a_r4_c2.jpg" alt="" border="0"></a></div>
+                        <div><a href="./index.html" target="_blank"><img src="http://baode.qiniudn.com/home/1a_r5_c2.jpg" alt="" border="0"></a></div>
                     </div>
             </div>
     </div>
-    <div style="width:10px; height:921px; float:left"><img name="index_r6_c38" src="./shool_files/index_r6_c38.jpg" width="10" height="921" border="0" id="Img4" alt=""></div>
+    <div style="width:10px; height:921px; float:left"><img name="index_r6_c38" src="http://baode.qiniudn.com/home/index_r6_c38.jpg" width="10" height="921" border="0" id="Img4" alt=""></div>
 </div>
 <!--//主体-->
 <!--底-->
 <div class="center">
     <div style="height:60px">
-        <div style="float:left"><a href="http://www.cixiedu.net/" target="_blank"><img src="./img/net/1.jpg" alt="" border="0"></a></div>
-        <div style="float:left"><a href="http://www.cxjsjy.net/" target="_blank"><img src="./img/net/2.jpg" alt="" border="0"></a></div>
-        <div style="float:left"><a href="http://dj.nbedu.net.cn/" target="_blank"><img src="./img/net/3.jpg" alt="" border="0"></a></div>
-        <div style="float:left"><a href="http://rsc.nbedu.net.cn/" target="_blank"><img src="./img/net/4.jpg" alt="" border="0"></a></div>
-        <div style="float:left"><a href="http://www.zjedu.org/" target="_blank"><img src="./img/net/5.jpg" alt="" border="0"></a></div>
+        <div style="float:left"><a href="http://www.cixiedu.net/" target="_blank"><img src="http://baode.qiniudn.com/img/net/1.jpg" alt="" border="0"></a></div>
+        <div style="float:left"><a href="http://www.cxjsjy.net/" target="_blank"><img src="http://baode.qiniudn.com/img/net/2.jpg" alt="" border="0"></a></div>
+        <div style="float:left"><a href="http://dj.nbedu.net.cn/" target="_blank"><img src="http://baode.qiniudn.com/img/net/3.jpg" alt="" border="0"></a></div>
+        <div style="float:left"><a href="http://rsc.nbedu.net.cn/" target="_blank"><img src="http://baode.qiniudn.com/img/net/4.jpg" alt="" border="0"></a></div>
+        <div style="float:left"><a href="http://www.zjedu.org/" target="_blank"><img src="http://baode.qiniudn.com/img/net/5.jpg" alt="" border="0"></a></div>
     </div>
 </div>
 <div class="center" style="height:116px;">

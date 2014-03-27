@@ -5,7 +5,7 @@ var path = require('path');
 var admin = require('./controllers/admin');
 var index = require('./controllers/index');
 
-var file = path.join(__dirname, './index.html');
+var file = path.join(__dirname, '/assets/home.html');
 var content = fs.readFileSync(file);
 
 var loginFile = path.join(__dirname, './assets/login.html');
