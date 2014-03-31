@@ -37,4 +37,12 @@ function Check() {
   }
   return true; 
 }
+
+  $.get('/session', {},  function (result) {
+    result = result || {};
+    if (result.name) {
+      var name = result.name;
+      $("#tab-user-name").html(name);
+    }
+  }, 'json');
 });

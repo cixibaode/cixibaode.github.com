@@ -4,6 +4,7 @@ var fs = require('fs');
 var path = require('path');
 var admin = require('./controllers/admin');
 var index = require('./controllers/index');
+var session = require('./controllers/session');
 
 var file = path.join(__dirname, '/assets/home.html');
 var content = fs.readFileSync(file);
@@ -18,7 +19,7 @@ app.use(connect.bodyParser());
 app.use(connect.cookieParser());
 //session
 app.use(connect.cookieSession({ secret: 'cixibade github com', cookie: { maxAge: 8 * 60 * 60 * 1000 }}));
-
+app.use('/session', session.middleware);
 app.use('/login', admin.login);
 app.use('/admin/', admin.middleware);
 app.use('/admin/create', admin.create);

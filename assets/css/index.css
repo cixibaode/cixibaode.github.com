@@ -56,3 +56,10 @@ body {
         MARGIN-RIGHT: auto; 
         MARGIN-LEFT: auto;
 }
+
+
+.tab_name {
+	margin-top: 8px;
+  color: white;
+  font-size: 15px;
+}

@@ -70,12 +70,6 @@ exports.middleware = function (req, res, next) {
       var titile = info.title || '';
       var type = info.type || '';
       var detail = info.detail || '';
-      var lines = detail.split('\n');
-      
-      for (var i = 0; i < lines.length; i++) {
-        lines[i] = '<p>&nbsp;&nbsp;&nbsp;' + lines[i] + '</p>'
-      }
-      detail = lines.join('');
       var str = contentContent.replace('{{user}}', user);
       str = str.replace('{{titile}}', titile);
       str = str.replace('{{detail}}', detail);
